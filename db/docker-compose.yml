@@ -1,0 +1,22 @@
+
+version: "3.7"
+services:
+  db:
+    image: postgres:14.1
+    restart: always
+    ports:
+      - "5433:5432"
+    env_file:
+      - ./config/pg.env
+    volumes:
+      - database-data:/var/lib/postgresql/data/
+      - ./schema:/docker-entrypoint-initdb.d
+    networks:
+      - db-network
+
+volumes:
+  database-data:
+
+networks:
+  db-network:
+    driver: bridge
