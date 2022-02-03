@@ -6,8 +6,8 @@ This project was completed as part of a group learning exercise. The project is 
 
 [https://tictactoken.fly.dev/](https://tictactoken.fly.dev/)
 
-![Game List](https://user-images.githubusercontent.com/14803/152296779-d2bf6d7d-e132-4078-90fd-69004492d021.png)
-![Game Board](https://user-images.githubusercontent.com/14803/152296854-8ebb1c3e-28dd-40dd-aca6-feac5cb41ff3.png)
+<img src="https://user-images.githubusercontent.com/14803/152296779-d2bf6d7d-e132-4078-90fd-69004492d021.png" width="512" alt="Game List" />
+<img src="https://user-images.githubusercontent.com/14803/152296854-8ebb1c3e-28dd-40dd-aca6-feac5cb41ff3.png" width="512" alt="Game Board" />
 
 ## Project Features
 
