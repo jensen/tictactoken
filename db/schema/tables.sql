@@ -9,7 +9,7 @@ create table users (
   username text not null,
   email text not null,
   provider_id text unique not null,
-  avatar text not null
+  avatar text 
 );
 
 create index users_provider_id_idx on users (provider_id);

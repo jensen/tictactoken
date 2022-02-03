@@ -9,7 +9,11 @@ interface IUserProps extends IUser {}
 function User(props: IUserProps) {
   return (
     <div className="rounded-full p-1 bg-purple-500 flex items-center space-x-2">
-      <img className="w-8 h-8 rounded-full" src={props.avatar} />
+      {props.avatar ? (
+        <img className="w-8 h-8 rounded-full" src={props.avatar} />
+      ) : (
+        <div className="w-8 h-8 rounded-full bg-purple-300" />
+      )}
       <div className="text-white pr-2">{props.username}</div>
     </div>
   );

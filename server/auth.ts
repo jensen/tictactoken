@@ -66,7 +66,9 @@ export const token: CallbackHandler = async (request, params, context) => {
       provider_id: id,
       username,
       email,
-      avatar: `https://cdn.discordapp.com/avatars/${id}/${avatar}.png`,
+      avatar: avatar
+        ? `https://cdn.discordapp.com/avatars/${id}/${avatar}.png`
+        : null,
     }
   );
 
