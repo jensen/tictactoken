@@ -29,12 +29,14 @@ function Status(props: IStatusProps) {
       if (g.state.every((v) => v !== null)) {
         setResult("Draw");
       } else {
-        setResult(props.turn() === props.user().id ? "Your Turn" : "Waiting");
+        if (!props.user()) {
+          setResult("Spectating");
+        } else {
+          setResult(props.turn() === props.user().id ? "Your Turn" : "Waiting");
+        }
       }
     }
   });
-
-  if (props.user && !props.user()) return null;
 
   return (
     <div className="flex justify-center py-2">
